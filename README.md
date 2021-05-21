@@ -5,3 +5,12 @@ Bulk installer for MuseScore 3.x.x Plugins.
 | Version | Support |
 | ----------- | ----------- |
 | 1.0.0.0 | :white_check_mark: |
+| 1.0.1.0 | :white_check_mark: |
+
+# Supported OS
+- :x: Windows XP
+- :x: Windows Vista
+- :x: Windows 7
+- :x: Windows 8
+- :x: Windows 8.1
+- :white_check_mark: Windows 10
