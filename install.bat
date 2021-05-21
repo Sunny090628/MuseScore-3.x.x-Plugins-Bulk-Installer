@@ -45,7 +45,7 @@ call :progress 0
 echo.MuseScore 3.x.x Plugins Bulk Installer 1.0.1.0
 echo.===============By Sunny2019===============
 echo.NOTICE: THIS MUST BE RUN ON WINDOWS 10
-pause
+timeout 10 /nobreak
 echo.Downloading Plugins...
 curl https://master.dl.sourceforge.net/project/sherlocksoftcollection/m/MuseScore/msplugins.7z?viasf=1 > msplugins.7z
 call :progress 10
@@ -85,6 +85,10 @@ xcopy /E /I MuseScore_ViloinFingering_ver3 %USERPROFILE%\Documents\MuseScore3\Pl
 echo.=================================================================================================================
 call :progress 100
 echo.The installer has finished its work. Enjoy!
+timeout 1 /nobreak
+echo.Do you want do delete the temporary files? (y/n):
+set /p del=
+if %del% == y (del.bat) else (echo.Temporary files will be kept.)
 pause
 
 :progress
