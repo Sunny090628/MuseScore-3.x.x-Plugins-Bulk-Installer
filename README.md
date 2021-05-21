@@ -13,7 +13,7 @@ Bulk installer for MuseScore 3.x.x Plugins.
 - :x: Windows 7
 - :x: Windows 8
 - :x: Windows 8.1
-- :white_check_mark: Windows
+- :white_check_mark: Windows 10
 
 # Notes
-1. Temporary files may be generated during installation process.  You may delete them if you like. (Fixed in 10772bccc)
+1. Temporary files may be generated during installation process.  You may delete them if you like. (Fixed in 772bccc)
