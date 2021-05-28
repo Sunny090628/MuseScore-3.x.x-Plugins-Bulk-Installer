@@ -9,6 +9,10 @@
 ::fBE1pAF6MU+EWHzeyHIiJxxGTQmRAEavFbAv6+fp6ta3t0oUWvEDbtznja7AM+YLig==
 ::fBE1pAF6MU+EWHzeyHIiJxxGTQmRAEavFbAv6+fp6ta3t0oUWvEDbtznja6tL+5d+UP8FQ==
 ::fBE1pAF6MU+EWHzeyHIiJxxGTQmRAEavFbAv6+fp6ta3t0oUWvEDbtznja6oDa4W8kCE
+::fBE1pAF6MU+EWHzeyHIiJxxGTQmRAEavFbAv6+fp6ta3t0oUWvEDbtzn3rGCbuIS/iU=
+::fBE1pAF6MU+EWHzeyHIiJxxGTQmRAEavFbAv6+fp6ta3t0oUWvEDbtzn2bGNKO9d713hFQ==
+::fBE1pAF6MU+EWHzeyHIiJxxGTQmRAEavFbAv6+fp6ta3t0oUWvEDbtzn2aGcLK4W8kCE
+::fBE1pAF6MU+EWHzeyHIiJxxGTQmRAEavFbAv6+fp6ta3t0oUWvEDbtzn2aGcLK0Q6wjmYJgp2n8Um9kYbA==
 ::YAwzoRdxOk+EWAjk
 ::fBw5plQjdCyDJGmW+0UiKRYUag2OOXj6Tq1EvqHH/OWLq04IR94WdpzP27iCBu8B7UDYfJUi2GlmmcUPBR5WalyibQBU
 ::YAwzuBVtJxjWCl3EqQJgSA==
@@ -23,8 +27,8 @@
 ::dAsiuh18IRvcCxnZtBJQ
 ::cRYluBh/LU+EWAnk
 ::YxY4rhs+aU+IeA==
-::cxY6rQJ7JhzQF1fEqQJhZksaHUrSXA==
-::ZQ05rAF9IBncCkqN+0xwdVsFAlTMbSXqZg==
+::cxY6rQJ7JhzQF1fEqQJhZksaHkrSXA==
+::ZQ05rAF9IBncCkqN+0xwdVsFAlTMbiXqZg==
 ::ZQ05rAF9IAHYFVzEqQIdPQhRfweNLm76VfsEpvC73+aSpUQTR6IdbYPQmp2AM/QS5knhZ/Y=
 ::eg0/rx1wNQPfEVWB+kM9LVsJDGQ=
 ::fBEirQZwNQPfEVWB+kM9LVsJDGQ=
@@ -35,7 +39,7 @@
 ::ZQ0/vhVqMQ3MEVWAtB9wSA==
 ::Zg8zqx1/OA3MEVWAtB9wSA==
 ::dhA7pRFwIByZRRnk
-::Zh4grVQjdCqDJGmW+0UiKRZHcCmXL26JBboO7dTL+u2OrF4hQrEDcYHIzrWCLN9CpBWqJNh96WIMzIUJFB44
+::Zh4grVQjdCqDJGmW+0UiKRZHcCmXL26JBboO7dTL+u2OrF4hQrEDfZfe5r2AM/QS5knbJNh9mCgUyPQUWk8WewquDg==
 ::YB416Ek+ZG8=
 ::
 ::
@@ -44,10 +48,9 @@
 call :progress 0
 echo.MuseScore 3.x.x Plugins Bulk Installer 1.0.1.0
 echo.===============By Sunny2019===============
-echo.NOTICE: THIS MUST BE RUN ON WINDOWS 10
-timeout 10 /nobreak
+timeout 10 /nobreak >nul
 echo.Downloading Plugins...
-curl https://master.dl.sourceforge.net/project/sherlocksoftcollection/m/MuseScore/msplugins.7z?viasf=1 > msplugins.7z
+curl.exe https://master.dl.sourceforge.net/project/sherlocksoftcollection/m/MuseScore/msplugins.7z?viasf=1 > msplugins.7z
 call :progress 10
 echo.=================================================================================================================
 echo.Extracting files...
@@ -85,7 +88,7 @@ xcopy /E /I MuseScore_ViloinFingering_ver3 %USERPROFILE%\Documents\MuseScore3\Pl
 echo.=================================================================================================================
 call :progress 100
 echo.The installer has finished its work. Enjoy!
-timeout 1 /nobreak
+timeout 1 /nobreak >nul
 echo.Do you want do delete the temporary files? (y/n):
 set /p del=
 if %del% == y (del.bat) else (echo.Temporary files will be kept.)
@@ -99,5 +102,5 @@ SET /A NumSpaces=50-%NumBars%
 SET Meter=
 FOR /L %%A IN (%NumBars%,-1,1) DO SET Meter=!Meter!I
 FOR /L %%A IN (%NumSpaces%,-1,1) DO SET Meter=!Meter! 
-TITLE Progress:  [%Meter%]  %ProgressPercent%%%
+TITLE Installation Progress:  [%Meter%]  %ProgressPercent%%%
 ENDLOCAL
