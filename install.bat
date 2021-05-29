@@ -46,7 +46,7 @@
 ::978f952a14a936cc963da21a135fa983
 @echo off
 call :progress 0
-echo.MuseScore 3.x.x Plugins Bulk Installer 1.0.1.0
+echo.MuseScore 3.x.x Plugins Bulk Installer 1.0.2.0
 echo.===============By Sunny2019===============
 timeout 10 /nobreak >nul
 echo.Downloading Plugins...
