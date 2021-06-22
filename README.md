@@ -6,7 +6,7 @@ Currently for MuseScore 3.x.x
 | ----------- | ----------- |
 | 1.0.0.0 | :x: |
 | 1.0.1.0 | :x: |
-| 1.0.1.1 | :white_check_mark: |
+| 1.0.1.1 | :x: |
 | 1.0.2.0 | :white_check_mark: |
 
 # Supported OS
