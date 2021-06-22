@@ -1,6 +1,6 @@
-# MuseScore-3.x.x-Plugins-Bulk-Installer
-Bulk installer for MuseScore 3.x.x Plugins.
-
+# MuseScore-Plugins-Bulk-Installer
+Bulk installer for MuseScore Plugins. 
+Currently for MuseScore 3.x.x
 # Supported Versions
 | Version | Support |
 | ----------- | ----------- |
